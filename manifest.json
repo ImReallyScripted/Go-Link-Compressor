@@ -1,7 +1,18 @@
 {
-  "manifest_version": 3,
-  "name": "Go",
-  "version": "1.0",
-  "omnibox": { "keyword": "go" },
-  "background": { "service_worker": "background.js" }
+    "manifest_version": 3,
+    "name": "Go",
+    "description": "A link compressor and decompressor",
+    "icons": {
+        "128": "128.png"
+    },
+    "version": "1.0",
+    "omnibox": { "keyword": "go" },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Go Encoder"
+    },
+    "background": { 
+        "service_worker": "background.js" ,
+        "type": "module"
+    }
 }
